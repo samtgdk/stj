@@ -1,0 +1,9 @@
+.container{
+    width: 500px;
+    padding: 2*$xl;
+    border-radius: $xl;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    gap: $xxl;
+}

@@ -1,0 +1,74 @@
+@import "./base/reset";
+
+@import "./abstract/initialize";
+@import "./shared/container";
+
+@import "./helpers/initialize";
+
+
+body{
+    background: $bg ;
+    height: 100vh; 
+   @include flex(row,center,center);
+}
+header{
+    @include flex(row,center,none);
+    gap: $md;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+p{
+    color: $blue;
+    padding-bottom:$sm ;
+    font-size: $fs-24;
+    font-weight: $fw-9;
+    font-family: 'Merriweather', serif;
+}
+.bot-title{
+    @include flex(row,center,center);
+    gap: $xs;
+}
+h3{
+    color: $blue;
+    font-family: 'Poppins', sans-serif;
+    line-height: $lg;
+    font-weight: $fw5;
+}
+.buttons{
+    gap: $md;
+    @include flex(column,center,none)
+}
+.btn{
+    &-top{
+        width: 100%;
+        background: $blue;
+        padding: $md;
+        gap: $sm;
+        border-radius: $sm;
+        @include flex(row,center,center);
+        color: $white;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: $fw5;
+         }
+    &-bot{
+        background: $white;
+        width: 100%;
+        padding: $md;
+        gap: $sm;
+        border-radius: $sm;
+        @include flex(row,center,center);
+        color: $blue;
+        border: 1px solid $blue;
+        font-family: 'Poppins', sans-serif;
+        font-weight: $fw-6;
+        }
+}
+
+.svg{
+    width: $lg+$xs;
+    height: $lg+$xs;
+}

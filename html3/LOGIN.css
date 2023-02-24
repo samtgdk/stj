@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/Aerial_View_of_Damavand_26.11.2008_04-25-38.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}  
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 15px;
+    
+}
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 90%;
+    border-radius:30px ;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 17px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 15px;
+    outline: none;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.2);
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+label a{
+    color: #fff;
+    text-decoration: none;
+}
